@@ -1,10 +1,12 @@
 ---
-layout: post
+layout: imagepost
 title: Rome 2
 date: 2013-10-31
 categories:
 - Italy
 - Rome
+imageslug: trevifountain
+portrait: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

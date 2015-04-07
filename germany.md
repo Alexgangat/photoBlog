@@ -14,7 +14,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <ul class="postsWrapper">
-{% for post in site.categories['germany'] %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+	{% for post in site.categories['germany'] %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
 </ul>
