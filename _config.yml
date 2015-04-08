@@ -12,6 +12,3 @@ github_username:  alexgangat
 
 # Build settings
 markdown: kramdown
-
-# How many posts
-paginate: 5

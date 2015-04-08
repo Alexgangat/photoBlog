@@ -1,204 +1,150 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 1.1em;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1.2;
+  background:$cream;
+  color: $darkBlue;
+  // letter-spacing: 0.05em;
 }
 
+h1{
+  font-size: 1.6em;
+  margin: 2em 0 0 0;
 
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+h2{
+  font-size: 1.2em;
+  margin: 3em 0 0 0;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+h3{
+  font-size: 1.1em;
+  margin:0.2em 0 0.2em 0;
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
+p{
+  font-size: 1em;
+  margin: 1em 0.2em;
 }
 
-figcaption {
-    font-size: $small-font-size;
+a{
+  color: $lightBlue;
+  text-decoration: none;
+  border-bottom: 0.1em solid;
 }
 
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+a:active{ 
+  color: $lightBlue;  
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+a:hover{ 
+  border-bottom: 0.15em solid; 
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+a:visited{ 
+  color: $darkBlue;
 }
 
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+ul{
+  list-style-type: none;
+}
+li{
+  margin: 0.5em 0;
+  padding-left: 1em;
+  display: inline-block;
 }
 
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+button{
+  background: $lightBlue;
+  color: $cream;
+  font-size: 1em;
+  outline: 0;
+  border-style: solid;
+  border-color: $darkBlue;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  &:hover{
+    background: $darkBlue;
+  }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+input{
+  background: $lightBlue;
+  color: $cream;
+  font-size: 1em;
+  border-color: $darkBlue;
+  border-radius: 0.5em;
+  width:27.5%;
+  padding: 0.2em;
+   outline: none;
+  &:focus{
+    background:$darkBlue;
+  }
+}
+sup { 
+    vertical-align: super;
+    font-size: 0.8em;
 }
 
-code {
-    padding: 1px 5px;
+.wrap{
+  width:90%;
+  max-width:60em;
+  margin:0 auto;
+}
+.scale{
+  padding:0.1%;
+  max-width: 100%;
+  margin: 2% 0;
+}
+.scaleHalf{
+  padding:0.05%;
+  max-width: 25%;
+  margin: 1% 0;
+}
+.scaleQuarter{
+  padding: 0% 0.05% 0 0.05%;
+  max-width: 12.5%;
+  margin: 1.25% 0 0 1%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.site-nav{
+  display: inline-block;
+  margin: 5% 0% 1% 75%;
+}
+ 
+.contact{
+  margin: 1em;
 }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+a.page-link{
+  display: inline-block;
 }
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+a.site-title{
+  font-size: 1.1em;
+  margin: 3em 0 3em 0;
+  color: $darkBlue;
+  border-bottom-style: hidden;
 }
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+h2.page-heading{
+  margin: 10em 0 0 0;
 }
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+div.page-content{
+  margin: 10em 0 0 0;
+}
+.mainPostImage{
+  width: 100%;
 }
