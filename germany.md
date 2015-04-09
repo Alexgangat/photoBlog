@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Germany
-permalink: /germanyCategory/
+permalink: /germany-Category/
 ---
 
 Test

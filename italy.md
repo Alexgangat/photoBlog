@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Italy
-permalink: /italyCategory/
+permalink: /italy-category/
 ---
 
 Test

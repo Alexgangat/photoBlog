@@ -1,0 +1,14 @@
+---
+layout: imagepost
+title: East Side Gallery
+date: 2013-04-15
+categories: 
+- Germany
+- Berlin
+imageslug: 
+- berlinwall
+- berlinwall2
+- berlinwall3
+- berlinwall5
+- berlinwall4
+---

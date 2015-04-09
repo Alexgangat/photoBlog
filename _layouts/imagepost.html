@@ -18,9 +18,11 @@ layout: default
   </header>
 
   {% if page.imageslug %}
-	  <div class="headerImage">
-	  	<img class="mainPostImage" src="/assets/images/{{ page.imageslug }}-L.jpg">
-	  </div>
+    {% for image in page.imageslug %}
+  	  <div class="headerImage">
+  	  	<img class="mainPostImage" src="/assets/images/{{ image }}-L.jpg">
+  	  </div>
+    {% endfor %}
   {% endif %}
 
   <article class="post-content">
